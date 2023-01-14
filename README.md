@@ -12,7 +12,7 @@ curl -fsSL https://kool.dev/install | bash
 
 After running above command your ready to run the application.
 
-Go inside your project direactory run the below command to setup your project first time.
+Clone this repo & go inside your project direactory run the below command to setup your project first time.
 
 ```bash
 kool run setup
@@ -28,7 +28,12 @@ kool stop
 ```
 
 ```bash
-kool exec app sh
+kool exec app COMMAND
+Example: 
+kool exec app ls
+kool exec app php artisan --help
+
+kool exec app sh // to enter into your docker container
 ```
 More information -> https://kool.dev/docs/presets/laravel
 Happy coding...
