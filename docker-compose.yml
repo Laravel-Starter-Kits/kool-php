@@ -10,6 +10,7 @@ services:
     environment:
       ASUSER: "${KOOL_ASUSER:-0}"
       UID: "${UID:-0}"
+      ENABLE_XDEBUG: "${ENABLE_XDEBUG:-true}"
     volumes:
       - .:/app:delegated
       - $HOME/.ssh:/home/kool/.ssh:delegated
